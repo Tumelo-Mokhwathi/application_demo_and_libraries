@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <b-navbar fixed="top" type="dark" variant="primary">
+    <b-navbar fixed="top" type="dark" variant="secondary">
     <slot name="logo" />
     <slot name="menu" />
   </b-navbar>

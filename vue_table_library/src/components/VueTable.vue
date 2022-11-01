@@ -22,23 +22,23 @@
         </b-alert>
       </template>
     </b-table>
-    <table-pagination
-      @selected-page="goToPage"
-      :total-filtered-records="totalFilteredRecords"
-      :page-number="currentPage"
+    <b-pagination
+      v-model="currentPage"
+      :total-rows="rows"
       :per-page="perPage"
-    />
+      align="right"
+      aria-controls="my-table"
+    ></b-pagination>
   </b-container>
 </template>
 
 <script>
-//import LoadingAlert from './LoadingAlert.vue';
-import TablePagination from './Pagination.vue';
 
 export default {
-  components: {
-    //LoadingAlert,
-    TablePagination,
+  computed: {
+    rows() {
+      return this.values.length;
+    },
   },
   data() {
     return {

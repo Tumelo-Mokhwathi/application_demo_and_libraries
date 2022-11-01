@@ -2,7 +2,7 @@
   <div id="app">
     <app-header>
       <template #logo>
-        <router-link :to="{ name: 'Search' }" class="navbar-brand">
+        <router-link :to="{ name: 'Search' }" class="navbar-brand pl-3">
           {{ title }}
         </router-link>
       </template>
@@ -44,7 +44,7 @@ export default {
       return routeItem;
     },
     title() {
-      return 'Single Page Application';
+      return 'Application Demo';
     },
   },
   data() {

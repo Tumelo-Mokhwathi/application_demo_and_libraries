@@ -11,7 +11,6 @@
   "sideEffects": false,
   "scripts": {
     "serve": "webpack-dev-server --config webpack/webpack.dev.conf.js --hot --progress -d",
-    "prebuild": "rimraf ./dist",
     "build": "vue-cli-service build",
     "build:npm": "vue-cli-service build --target lib --name vue_table_library src/components/VueTable.vue",
     "build-lib": "vue-cli-service build --target lib --name vue_table_library src/components/VueTable.vue"
