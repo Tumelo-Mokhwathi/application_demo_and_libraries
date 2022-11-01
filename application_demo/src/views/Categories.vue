@@ -8,7 +8,7 @@
       v-b-modal.modal-1
     />
     <vue-table :fields="fields" :values="items" tableId="table-id" />
-    <b-modal id="modal-1" title="Create New User">
+    <b-modal id="modal-1" title="Create New Category">
       <vue-input-text placeholderText="Enter your first name" typeText="text" class="mb-3" />
       <vue-select-input :options="options" class="mb-2" />
       <vue-text-area headerText="Comment" />
@@ -74,6 +74,6 @@ export default {
       ],
     };
   },
-  name: "ServeDev",
+  name: "Categories",
 };
 </script>

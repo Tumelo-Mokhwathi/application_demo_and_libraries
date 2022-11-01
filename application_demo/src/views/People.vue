@@ -9,10 +9,14 @@
     />
     <vue-table :fields="fields" :values="items" tableId="table-id" />
     <b-modal id="modal-1" title="Create New User">
-      <vue-input-text placeholderText="Enter your first name" typeText="text" class="mb-3" />
+      <vue-input-text
+        placeholderText="Enter your first name"
+        typeText="text"
+        class="mb-3"
+      />
       <vue-select-input :options="options" class="mb-2" />
       <vue-text-area headerText="Comment" />
-      <vue-radio-toggle text="I confirm that I am a Software Developer"/>
+      <vue-radio-toggle text="I confirm that I am a Software Developer" />
     </b-modal>
   </b-container>
 </template>
@@ -59,9 +63,9 @@ export default {
   data() {
     return {
       options: [
-          { id: 1, text: 'Option 1' },
-          { id: 2, text: 'Option 2' },
-        ],
+        { id: 1, text: "Option 1" },
+        { id: 2, text: "Option 2" },
+      ],
       items: [
         { id: 1, age: 40, first_name: "Dickerson", last_name: "Macdonald" },
         { id: 2, age: 21, first_name: "Larsen", last_name: "Shaw" },
@@ -74,6 +78,6 @@ export default {
       ],
     };
   },
-  name: "ServeDev",
+  name: "People",
 };
 </script>
