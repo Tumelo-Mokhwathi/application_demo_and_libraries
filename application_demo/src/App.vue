@@ -25,8 +25,8 @@
   </div>
 </template>
 <script>
-import AppFooter from '@/components/shared/AppFooter.vue';
-import AppHeader from '@/components/shared/AppHeader.vue';
+import AppFooter from "@/components/shared/AppFooter.vue";
+import AppHeader from "@/components/shared/AppHeader.vue";
 
 export default {
   components: {
@@ -36,7 +36,7 @@ export default {
   computed: {
     routeLinks() {
       const routeItem = this.$router.options.routes
-        .filter((r) => r.name !== 'Landing')
+        .filter((r) => r.name !== "Landing")
         .map((s) => ({
           to: s.path,
           name: s.name,
@@ -44,7 +44,7 @@ export default {
       return routeItem;
     },
     title() {
-      return 'Application Demo';
+      return "Application Demo";
     },
   },
   data() {
@@ -53,7 +53,11 @@ export default {
       version: process.env.VUE_APP_VERSION,
     };
   },
-  name: 'app',
+  name: "app",
 };
 </script>
-<style></style>
+<style>
+a {
+  text-decoration: none;
+}
+</style>
