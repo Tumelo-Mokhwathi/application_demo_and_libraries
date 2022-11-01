@@ -1,14 +1,14 @@
 # Application Demo
 The application contain libraries.
 
-# Instruction on how to use
+## Instruction on how to use
 * npm run install - to install the application dependencies.
 * npm run server - to run the application.
 
 # Libraries
 There are 6 libraries which can be installed on the application above.
 
-# Instruction on how to use
+## Instruction on how to use
 * npm run build:npm - to build the library npm package. It will create dist folder.
 * npm run server - to test the library on the webpack dev server.
 
